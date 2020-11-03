@@ -28,7 +28,7 @@ export const getErrors = curry(
       }), {})
 )
 
-export const getErrorsFromSchema =
+export const getValidateFunction =
   (validationSchema: ValidationSchema) =>
     (form: FormValue) =>
       Object.fromEntries(

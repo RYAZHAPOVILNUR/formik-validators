@@ -9,9 +9,9 @@ import Container from '@material-ui/core/Container';
 import {Formik} from 'formik';
 import {compare, email, max, min, required} from './validators';
 import {Validate} from './types';
-import {getErrorsFromSchema} from './utils';
+import {getValidateFunction} from './utils';
 
-const validate: Validate = getErrorsFromSchema(
+const validate: Validate = getValidateFunction(
   {
     firstName: [required, min(2), max(20)],
     lastName: [required, min(2), max(20)],
