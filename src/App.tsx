@@ -67,9 +67,8 @@ export default function SignUp() {
             touched,
             handleChange,
             handleBlur
-          }) => {
-            console.log({errors})
-            return (
+          }) =>
+            (
               <form className={classes.form} noValidate>
                 <Grid container spacing={2}>
                   <Grid item xs={12} sm={6}>
@@ -168,7 +167,7 @@ export default function SignUp() {
                 </Button>
               </form>
             )
-          }}
+          }
         </Formik>
       </div>
     </Container>
